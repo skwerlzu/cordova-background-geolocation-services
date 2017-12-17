@@ -348,8 +348,14 @@ public class BackgroundLocationUpdateService
         Log.w(TAG, "Activity is recording" + isRecording);
 
         if(lastActivity.getType() == DetectedActivity.STILL && isRecording) {
-            showDebugToast(context, "Detected Activity was STILL, Stop recording");
-            stopRecording();
+            
+            if(fastestSpeed == false){
+                showDebugToast(context, "Detected Activity was STILL, Stop recording");
+                stopRecording();
+            }else{
+                showDebugToast(context, "Aggressive Tracking is activated. Letting recorder run.");
+            }
+            
         } else if(lastActivity.getType() != DetectedActivity.STILL && !isRecording) {
             showDebugToast(context, "Detected Activity was ACTIVE, Start Recording");
             startRecording();
