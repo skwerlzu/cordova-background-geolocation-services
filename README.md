@@ -1,9 +1,8 @@
 # cordova-background-geolocation-services
 Background Geolocation For Android and iOS with pure javascript callbacks.
 
-#### What is this? This fork is purely for experimentation and most likely will not work as expected, or at all.
-This plugin was forked from https://github.com/pmwisdom/cordova-background-geolocation-services
-
+#### What is this?
+This plugin is for enabling background geolocation in your cordova project. It was aimed with the specific goal of normalizing the API for android and iOS and retrieving constant location updates in the background until you tell it to stop (If you tell it you want updates every 3 seconds it will give you one every 3 seconds). This is currently in active development. Feel free to make any requests. 
 
 I've also included an activity detection API. It is used to save battery life, but you can also retrieve the likelihood of what the user is currently doing (standing still, walking, running, driving, etc).
 

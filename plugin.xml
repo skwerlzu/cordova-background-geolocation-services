@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="org.flybuy.cordova.background-location-services"
+    id="skwerlzu.cordova.background-location-services"
     version="1.1.1">
 
-    <name>CDVBackgroundLocationServices</name>
+    <name>Skwerlz BG Geolocation</name>
     <description>Background Location Services For Cordova</description>
     <license>MIT</license>
     <keywords></keywords>
