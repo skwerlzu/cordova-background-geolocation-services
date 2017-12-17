@@ -3,7 +3,7 @@ Background Geolocation For Android and iOS with pure javascript callbacks.
 
 #### What is this?
 This plugin was forked from https://github.com/pmwisdom/cordova-background-geolocation-services
-This fork is purely for experimentation and most likely will not work as expected, or at all.
+#This fork is purely for experimentation and most likely will not work as expected, or at all.
 
 I've also included an activity detection API. It is used to save battery life, but you can also retrieve the likelihood of what the user is currently doing (standing still, walking, running, driving, etc).
 
