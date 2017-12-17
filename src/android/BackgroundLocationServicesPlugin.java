@@ -48,6 +48,8 @@ public class BackgroundLocationServicesPlugin extends CordovaPlugin {
     private Boolean inBackground = false;
     private boolean isServiceBound = false;
 
+    private boolean trekking = false;
+    
     private String desiredAccuracy = "1000";
 
     private Intent updateServiceIntent;
@@ -268,6 +270,7 @@ public class BackgroundLocationServicesPlugin extends CordovaPlugin {
           detectedActivitiesCallback = callbackContext;
         } else if(ACTION_AGGRESSIVE_TRACKING.equalsIgnoreCase(action)) {
             result = true;
+            trekking = true;
             if(isEnabled) {
                 this.cordova.getActivity().sendBroadcast(new Intent(Constants.CHANGE_AGGRESSIVE));
                 callbackContext.success();

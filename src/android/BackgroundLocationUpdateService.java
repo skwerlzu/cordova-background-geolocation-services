@@ -349,7 +349,7 @@ public class BackgroundLocationUpdateService
 
         if(lastActivity.getType() == DetectedActivity.STILL && isRecording) {
             
-            if(fastestSpeed == false){
+            if(trekking == false){
                 showDebugToast(context, "Detected Activity was STILL, Stop recording");
                 stopRecording();
             }else{
